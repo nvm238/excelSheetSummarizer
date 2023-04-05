@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="nl-NL">
+<head>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.13.5/xlsx.full.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.13.5/jszip.js"></script>
+    <script src="custom.js"></script> 
+    <title>Page Title</title>
+</head>
+<body>
+    <input type="file" id="fileUpload" />
+    
+    <div id="text-repeater">
+        <div class="form-group" style="width: 100%">
+            <label for="sheetNames">Sheet Naam:</label>
+            <input type="text" class="sheetNames" name="sheetNames">
+            <label for="sheetCols">Sheet Cols (Scheid met komma):</label>
+            <input type="text" class="sheetCols" name="sheetCols">
+        </div>
+    </div>
+    <button id="add-text" class="btn btn-primary">Voeg nieuwe rij toe</button>
+    <input type="button" id="upload" value="Start proces" />
+
+    <button id="exportBtn">Exporteer naar nieuw excel bestand</button>
+    <button id="importBtn">Importeer in bestaand excel bestand</button>
+<hr />
+<div id="dvExcel"></div>
+</body>
+</html>
